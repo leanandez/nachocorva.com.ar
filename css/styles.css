@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*maps*/
+body {
+  background-color: #131c33;
+  width: 100%;
+  height: auto;
+}
+
+/*HEADER*/
+nav {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  background-color: rgb(12, 11, 11);
+  border-bottom: 2px grey solid;
+}
+nav .navbar-dark .navbar-nav .nav-link {
+  list-style-type: none;
+  text-decoration: none;
+  color: aquamarine;
+  text-shadow: 4px 4px 2px #000000;
+}
+nav .navbar-dark .navbar-nav .nav-link:hover {
+  color: #131c33;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* MAIN*/
+.container-fluid {
+  padding: 0;
+}
+
+/*INDEX*/
+.index-about {
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+}
+.index-about .index-img {
+  background-image: url(../assets/nacho.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index-about .index-p {
+  font-family: "Joan";
+  color: aquamarine;
+  text-align: justify;
+  font-size: 30px;
+}
+.index-about .btn {
+  font-family: "Joan";
+  font-weight: bold;
+  color: rgb(12, 11, 11);
+  background-color: aquamarine;
+  width: 150px;
+}
+.index-about .btn:hover {
+  background-color: green;
+  color: aquamarine;
+  font-weight: bolder;
+}
+
+/*PORTFOLIO*/
+.gallery {
+  display: grid;
+  grid-template-areas: "img1 img2 img2 img3" "img4 img2 img2 img3" "img5 img5 img6 img6" "img5 img5 img7 img8" "img9 img9 img10 img10" "img11 img11 img10 img10" "img12 img13 img13 img14" "img15 img13 img13 img14" "img16 img16 img17 img17" "img16 img16 img18 img19" "img20 img20 img21 img21" "img22 img22 img21 img21";
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(12, 250px);
+  grid-gap: 2px;
+  margin: 30px;
+}
+.gallery .portimg {
+  border: solid 2px black;
+  transition: ease-out 0.5s;
+}
+.gallery .portimg:hover {
+  transform: scale(1.05);
+  transition: ease-in 0.5s;
+}
+.gallery .img1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img1.jpg);
+  grid-area: img1;
+}
+.gallery .img2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img2.jpg);
+  grid-area: img2;
+}
+.gallery .img3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img3.jpg);
+  grid-area: img3;
+}
+.gallery .img4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img4.jpg);
+  grid-area: img4;
+}
+.gallery .img5 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img5.jpg);
+  grid-area: img5;
+}
+.gallery .img6 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img6.png);
+  grid-area: img6;
+}
+.gallery .img7 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img7.jpg);
+  grid-area: img7;
+}
+.gallery .img8 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img8.jpg);
+  grid-area: img8;
+}
+.gallery .img9 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img9.jpg);
+  grid-area: img9;
+}
+.gallery .img10 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img10.jpg);
+  grid-area: img10;
+}
+.gallery .img11 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img11.jpg);
+  grid-area: img11;
+}
+.gallery .img12 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img12.jpg);
+  grid-area: img12;
+}
+.gallery .img13 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img13.png);
+  grid-area: img13;
+}
+.gallery .img14 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img14.jpg);
+  grid-area: img14;
+}
+.gallery .img15 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img15.jpg);
+  grid-area: img15;
+}
+.gallery .img16 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img16.jpg);
+  grid-area: img16;
+}
+.gallery .img17 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img17.png);
+  grid-area: img17;
+}
+.gallery .img18 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img18.png);
+  grid-area: img18;
+}
+.gallery .img19 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img19.png);
+  grid-area: img19;
+}
+.gallery .img20 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img20.jpg);
+  grid-area: img20;
+}
+.gallery .img21 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img21.jpg);
+  grid-area: img21;
+}
+.gallery .img22 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/img22.png);
+  grid-area: img22;
+}
+
+/*CLASSES*/
+.main-classes {
+  height: auto;
+  padding: 50px;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Joan";
+  color: aquamarine;
+  text-align: justify;
+}
+.main-classes .row {
+  margin: 25px 0;
+}
+.main-classes .class-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid black 2px;
+  height: auto;
+}
+.main-classes .class1 {
+  background-image: url(../assets/boceto.png);
+}
+.main-classes .class2 {
+  background-image: url(../assets/boceto2.png);
+}
+.main-classes .class3 {
+  background-image: url(../assets/boceto3.jpg);
+}
+
+/*ABOUT*/
+.main-about {
+  padding: 75px 0;
+  width: 100%;
+  height: auto;
+  color: aquamarine;
+  font-size: 20px;
+  text-align: justify;
+}
+.main-about .row {
+  margin-right: 0px;
+}
+.main-about .about-p {
+  width: 100%;
+}
+.main-about .about-img {
+  background-image: url(../assets/nacho2.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*CONTACT*/
+.main-contact {
+  padding: 20px 0 20px 0;
+}
+.main-contact .row {
+  margin-right: 0px;
+}
+.main-contact .form {
+  color: white;
+  padding: 20px;
+  font-family: "Source Sans Pro";
+}
+.main-contact .form .btn {
+  margin-left: 20px;
+}
+.main-contact .form-img {
+  background-image: url(../assets/img8.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*FOOTER*/
+footer {
+  height: auto;
+  background-color: black;
+  color: white;
+  border-top: white 2px solid;
+  font-family: "Joan";
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 480px) {
+  /*INDEX*/
+  .carousel-inner .carousel-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 400px;
+  }
+
+  .index-about {
+    margin-left: 0px;
+  }
+  .index-about .index-img {
+    height: 250px;
+  }
+  .index-about .index-p {
+    padding: 40px 40px 0 40px;
+  }
+  .index-about .index-p h1 {
+    text-align: center;
+  }
+  .index-about .index-p p {
+    font-size: 24px;
+  }
+  .index-about .index-p .btn {
+    margin-left: 33%;
+  }
+
+  /*PORTFOLIO*/
+  .gallery {
+    grid-template-areas: "img2" "img1" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11" "img12" "img13" "img14" "img15" "img16" "img17" "img18" "img19" "img20" "img21" "img22";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(22, 250px);
+  }
+  .gallery .img1, .gallery .img3, .gallery .img4, .gallery .img7, .gallery .img8 {
+    background-position-y: -70px;
+  }
+
+  /*CLASSES*/
+  .main-classes {
+    padding: 20px;
+  }
+  .main-classes .row-1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-classes .row-1 .class1 {
+    padding-top: 250px;
+  }
+  .main-classes .row-3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-classes .row-3 .class3 {
+    padding-top: 250px;
+  }
+  .main-classes .class-img {
+    height: 250px;
+  }
+  .main-classes h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .main-classes h2 {
+    text-align: center;
+  }
+  .main-classes p {
+    font-size: 25px;
+  }
+
+  /*ABOUT*/
+  .about-img {
+    height: 250px;
+  }
+
+  .about-p {
+    padding: 50px;
+    font-size: 22px;
+  }
+  .about-p h1 {
+    text-align: center;
+  }
+
+  /*CONTACT*/
+  .form-img {
+    height: 250px;
+  }
+
+  /*FOOTER*/
+  footer {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /*INDEX*/
+  .index-about .index-p .btn {
+    margin-left: 50px;
+  }
+
+  /*PORTFOLIO*/
+  .gallery .img1, .gallery .img3, .gallery .img4, .gallery .img7, .gallery .img8 {
+    background-position: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
